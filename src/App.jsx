@@ -25,7 +25,12 @@ const App = () => {
       id: '3',
       title: 'Estudar Node.JS',
       completed: false,
-    }    
+    },
+    {
+      id: '3',
+      title: 'Estudar Node.JS',
+      completed: false,
+    }     
   ]);
 
   return(
