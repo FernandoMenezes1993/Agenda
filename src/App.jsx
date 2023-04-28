@@ -15,28 +15,25 @@ const App = () => {
       id: '2',
       title: 'Estudar JS',
       completed: false,
-    },
-    {
-      id: '3',
-      title: 'Estudar Node.JS',
-      completed: false,
-    },
-    {
-      id: '3',
-      title: 'Estudar Node.JS',
-      completed: false,
-    },
-    {
-      id: '3',
-      title: 'Estudar Node.JS',
-      completed: false,
-    }     
+    }   
   ]);
+
+  const handleTaskAddition = (taskTitle) => {
+    const newTasks = [
+      ... tasks,
+      {
+        title: taskTitle,
+        id: Math.random(10),
+        completed: false,
+      },
+    ];
+    setTasks(newTasks);
+  };
 
   return(
     <>
       <div className='container'>
-        <AddTask/>
+        <AddTask handleTaskAddition={handleTaskAddition}/>
         <Tasks tasks={tasks} />
       </div>
       
