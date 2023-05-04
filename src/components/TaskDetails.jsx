@@ -20,10 +20,7 @@ const TaskDetails = () => {
 			</div>
 			<div className="task-details-container">
 				<h2>{params.taskTitle}</h2>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
-					minima eius magnam culpa sequi explicabo.
-				</p>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nostrum quibusdam recusandae repellat, quo ipsam.</p>
 			</div>
 		</>
 	);
